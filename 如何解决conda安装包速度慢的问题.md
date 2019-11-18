@@ -14,6 +14,8 @@ conda config --set show_channel_urls yes
 
 ## 安装tensorflow
 1. [win10+cuda10.1+cudnn7.5+anaconda3 安装 tensorflow-gpu](https://blog.csdn.net/u011736505/article/details/92806922)
+2. [pip使用清华镜像安装tensorflow](https://blog.csdn.net/ltb_args/article/details/82989509)
+    * 如`pip install tensorflow-gpu==1.15 -i https://pypi.tuna.tsinghua.edu.cn/simple`
 
 ## 坚持是否利用了gpu
 1. [pytorch中查看gpu信息](https://blog.csdn.net/nima1994/article/details/83001910)
