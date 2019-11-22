@@ -4,6 +4,7 @@
 1. 安装pytorch/tensorflow/onnx/onnx_tf
 2. python环境下，为了便于安装，可以将安装镜像改为国内的镜像，具体方法参见[link](https://github.com/searobbersduck/notebook.io/blob/master/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3conda%E5%AE%89%E8%A3%85%E5%8C%85%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98.md)
 3. 安装时，直接pip安装即可，以下例子中所用到的版本`tensorflow-gpu==1.15`,`onnx_tf==1.3`
+4. 说明，`tensorflow-gpu==1.13`以上的版本就可以对应`onnx_tf==1.3`，要确保转换模型时，所用的tensorflow版本和挂载模型的trt docker中的tensorflow版本一致，否则会报错。
 
 ## 模型转换
 1. pytorch模型与tensorflow之间的转换需要中间协议onnx，我们的转换步骤为：
