@@ -2,7 +2,9 @@
 
 ## 
 
-
+参考配置：
+1. [vscode下Python设置参考](https://www.cnblogs.com/it-tsz/p/9346110.html)
+2. [用VScode代码调试Python](https://www.cnblogs.com/it-tsz/p/9022456.html)
 
 
 ## 遇到的问题
