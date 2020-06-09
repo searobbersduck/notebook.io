@@ -1,0 +1,1 @@
+1. [Ubuntu 使用 Latex，使用VS Code 中文](https://zhuanlan.zhihu.com/p/65931654)
