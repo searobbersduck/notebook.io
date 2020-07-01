@@ -31,7 +31,7 @@
 		lsmod |grep nouveau #无显示则成功 当然驱动没了你的桌面分辨率会比较大。
 		```
 		
-	3. 如果遇到* An NVIDIA kernel module 'nvidia-drm' appears to already be loaded in your kernel....*问题，参照[CUDA和NVIDIA-Driver安装问题](https://blog.csdn.net/xcls2010/article/details/89641853)
+	3. 如果遇到* An NVIDIA kernel module 'nvidia-drm' appears to already be loaded in your kernel....*问题，参照[CUDA和NVIDIA-Driver安装问题](https://blog.csdn.net/xcls2010/article/details/89641853)和[[Solved] An NVIDIA kernel module ‘nvidia-drm’ appears to already be loaded in your kernel](https://clay-atlas.com/us/blog/2020/03/04/linux-english-note-how-to-disable-nvidia-drm/)
 		```
 		
 		# 禁用图形目标
@@ -47,6 +47,16 @@
 		```
 		如果在没有图形界面的服务器上安装，只需执行`sudo modprobe -r nvidia-drm`即可
 		
+	4. 如果遇到* An NVIDIA kernel module 'nvidia' appears to already be loaded in your kernel. ...*问题，请参照[安装cuda8.0中所遇到的问题-解决办法](https://www.cnblogs.com/cxyxbk/p/6024610.html)
+		```
+		sudo apt-get purge nvidia-cuda*
+		sudo apt-get purge nvidia-*
+		```
+
+	5. 如果遇到* You appear to be running an X server; ...*问题并且确定停止了占用显卡的程序， 请参照[How to install NVIDIA.run?](https://askubuntu.com/questions/149206/how-to-install-nvidia-run) 
+		```
+		sudo sh ./NVIDIAxxxx.run --no-x-check
+		```
 4. 经过如上步骤安装基本完成，再根据需要需要的cuda版本
 		
 	
