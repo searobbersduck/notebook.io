@@ -10,4 +10,6 @@
 8. [OPTIONAL) EXPORTING A MODEL FROM PYTORCH TO ONNX AND RUNNING IT USING ONNX RUNTIME](https://pytorch.org/tutorials/advanced/super_resolution_with_onnxruntime.html)
     * pytorch模型转onnx模型
     * 会涉及到动态输入的问题
+    * [Dynamic dummy input when exporting a PyTorch model?](https://github.com/onnx/onnx/issues/654)
+    
 
